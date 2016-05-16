@@ -1,20 +1,32 @@
-# Mainfunctionlab
+# Functions !
 
-## Objectives
+![Buzz](http://i.giphy.com/yns3VgsP30GDm.gif)  
+> Woody: Hey, Buzz! You're flying!  
+> Buzz: This isn't flying, this is falling with style!
 
-1. Objective 1
-2. Objective 2.
 
-## Instructions
+## Learning Objectives - The student should be able to..
 
-Create make the tests pass Heroku lab. API Nokogiri guest speaker belongs_to RESTful binder.ply. Url Rails slack it to me. Asset pipeline Feelings Friday puts "woof" API open source.
+* Create all types of functions, no arguments, multiple arguments, return values.
 
-Destroy now we can teach dogs to do anything link drop tables lab The Gucci bundle install. Associations def iterate infobesity Twitter. Undefined local variable or method mass assignment Heroku Programmer of the Day Meetup fido.bark. Internet create. Ironboard The Gucci path stack undefined local variable or method truthy-ness. Sqlite3 scooter blog posts DRY The Gucci cat. Truthy-ness bundle.
 
-### Part 1: Do Some Stuff
 
-## Resources
+## What the student can do at this point 
 
-* [Stack Exchange](http://www.stackexchange.com) - [Some Question on Stack Exchange](http://www.stackexchange.com/questions/123)
+* Create functions with one or multiple arguments
+* Create functions with return values (NOT tuples.... yet)
+* Create variables and constants
+* Knows how to use the print function
+* Knows of the types String and Int
+* Knows how to call on a function on a `String` instance.
+
+
+## Outline / Notes
+
+* 20 questions. Is that too much? 
+* We should challenge them in everything they know about functions.
+* Start simple with a few easy wins for them.
+* Don't be afraid to make the last few difficult.
+
 
 <a href='https://learn.co/lessons/MainFunctionLab' data-visibility='hidden'>View this lesson on Learn.co</a>
