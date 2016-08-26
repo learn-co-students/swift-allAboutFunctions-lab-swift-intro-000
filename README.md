@@ -4,11 +4,9 @@
 > Woody: Hey, Buzz! You're flying!  
 > Buzz: This isn't flying, this is falling with style!
 
-## Learning Objectives
+## Overview
 
-* Create functions with no arguments as well as functions that take multiple arguments.
-* Create functions that contain return values.
-
+In this lab, you'll create functions that take no and multiple arguments as well as functions that return values. 
 
 ## Instructions
 
