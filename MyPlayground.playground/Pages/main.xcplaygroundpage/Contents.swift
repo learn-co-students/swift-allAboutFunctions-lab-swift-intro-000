@@ -99,7 +99,7 @@
 //    print("My #\(position) favorite band is \(bandName)")
 //}
 //
-//alsoBadFavoriteBand("Blink-182", position: 42)
+//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
