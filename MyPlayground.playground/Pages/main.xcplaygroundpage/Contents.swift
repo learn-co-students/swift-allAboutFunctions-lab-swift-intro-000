@@ -131,8 +131,8 @@ madLib(charName: "Harvy", noun: "Infinity", preposition: "beyond")
 /*: question10
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
-func buzz() {
-    print("Buzz Lightyear to the rescue!")
+func buzz() -> String {
+    return "Buzz Lightyear to the rescue!"
 }
 
 buzz()
