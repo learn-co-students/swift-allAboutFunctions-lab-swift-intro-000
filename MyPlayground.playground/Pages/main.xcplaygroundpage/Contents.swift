@@ -47,7 +47,7 @@ func fave(charName: String){
 
 
 
-fave("Benji")
+fave(charName:"Benji")
 
 
 
@@ -56,15 +56,15 @@ fave("Benji")
  */
 let cons = "Patrick"
 
-fave(cons)
+fave(charName: cons)
 
 var sB = "Sponge Bob"
 
-fave(sB)
+fave(charName: sB)
 
 sB = "Miss Puff"
 
-fave(sB)
+fave(charName: sB)
 
 
 
@@ -87,7 +87,7 @@ func probs(numbs: Int){
 }
 
 
-probs(99)
+probs(numbs:99)
 
 
 
@@ -101,7 +101,7 @@ func faveBand(band: String, number: Int){
     print("My #\(number) favorite band is \(band).")
 }
 
-faveBand("Cheap Trick", number: 1)
+faveBand(band:"Cheap Trick", number: 1)
 
 
 
@@ -113,7 +113,7 @@ func badFavoriteBand(bandName: String, position: Int) {
    print("My #\(position) favorite band is \(bandName).")
 }
 
-badFavoriteBand("The Beatles", position: 2)
+badFavoriteBand(bandName:"The Beatles", position: 2)
 
 
 
@@ -128,7 +128,7 @@ func alsoBadFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName)")
 }
 
-alsoBadFavoriteBand("Blink-182", position: 42)
+alsoBadFavoriteBand(bandName:"Blink-182", position: 42)
 
 
 
@@ -144,7 +144,7 @@ func madLib(charName: String, noun: String, preposition: String){
 }
 
 
-madLib("Dracula", noun: "Onion", preposition: "on")
+madLib(charName:"Dracula", noun: "Onion", preposition: "on")
 
 
 
@@ -153,11 +153,11 @@ madLib("Dracula", noun: "Onion", preposition: "on")
 /*: question10
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
-func noArgs(){
+func noArgs() -> String {
     return "Buzz Lightyear to the rescue!"
 }
 
-
+noArgs()
 
 
 
@@ -166,11 +166,11 @@ func noArgs(){
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
-func numArgs(){
+func numArgs() -> Int{
     return 87
 }
 
-
+numArgs()
 
 
 
@@ -178,12 +178,12 @@ func numArgs(){
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
-func upped(charName: String){
+func upped(charName: String) -> String{
     return "To infinity and beyond, \(charName)!"
 }
 
 
 
-
+upped(charName: "Buzz Lightyear")
 
 
