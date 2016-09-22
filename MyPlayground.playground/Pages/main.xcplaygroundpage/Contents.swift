@@ -70,11 +70,11 @@ badFavoriteBand(bandName: "The Beatles", position: 2)
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-func alsoBadFavoriteBand(bandName: String, position: String) {
+func alsoBadFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName)")
 }
 
-alsoBadFavoriteBand(bandName: "Blink-182", position: "42")
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 /*: question9
  ### 9. Let's play Mad Libs! Create a function called `madLib`. It should take three parameters: A character name, a noun, and a preposition, and print out the line "To <noun> and <preposition>, <character name>!" to the console. Don't forget to call your function to test it out!
  */
@@ -83,6 +83,14 @@ func madLib(noun: String, preposition: String, characterName: String) {
 }
 
 madLib(noun: "Infinity", preposition: "Beyond", characterName: "Woody")
+
+
+//func madLib(characterName: String, noun: String, preposition: String) {
+//    print("To \(noun) and \(preposition), \(characterName)!")
+//}
+//
+//madLib("Homer Simpson", noun: "refrigerator", preposition: "behind")
+//^^Pulled from the solution branch, it returns error to fix so that the parameters are in order, but in solution it doesnt have an error. Swift vers issue?
 /*: question10
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
@@ -103,8 +111,9 @@ func noArgToNum() -> Int {
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 func disneyIsWatching(characterName: String) -> String {
-    let convertedPhrase = "To infinity and beyond, \(characterName.uppercased())!"
-    return convertedPhrase
+//    let convertedPhrase = "To infinity and beyond, \(characterName.uppercased())!"
+//    return convertedPhrase
+    return "To infinity and beyond, \(characterName.uppercased())!"
 }
 
 print(disneyIsWatching(characterName: "buzz"))
