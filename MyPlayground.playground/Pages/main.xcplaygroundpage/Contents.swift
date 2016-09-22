@@ -15,10 +15,12 @@
  */
 // write your code here
 
+func frozen(){
+    print("Let it go!")
+}
 
 
-
-
+frozen()
 
 
 
@@ -27,8 +29,12 @@
  */
 // write your code here
 
+func frozenAgain() {
+    let song = "Let it go!"
+    print(song)
+}
 
-
+frozenAgain()
 
 
 
@@ -38,9 +44,11 @@
  */
 // write your code here
 
+func favoriteCharacter(name: String) {
+    print("My favorite character is \(name)")
+}
 
-
-
+favoriteCharacter(name: "Roger Rabbit")
 
 
 
@@ -49,10 +57,10 @@
  */
 // write your code here
 
-
-
-
-
+let villain = "Joker"
+var batman = "Batman"
+favoriteCharacter(name: villain)
+favoriteCharacter(name: batman)
 
 
 /*: question5
