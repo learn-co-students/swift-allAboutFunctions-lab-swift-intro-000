@@ -22,8 +22,6 @@ func frozen(){
 
 frozen()
 
-
-
 /*: question2
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
@@ -36,21 +34,16 @@ func frozenAgain() {
 
 frozenAgain()
 
-
-
-
 /*: question3
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
 // write your code here
 
-func favoriteCharacter(name: String) {
-    print("My favorite character is \(name)")
+func favoriteCharacter(characterName: String) {
+    print("My favorite character is \(characterName)")
 }
 
-favoriteCharacter(name: "Roger Rabbit")
-
-
+favoriteCharacter(characterName: "Roger Rabbit")
 
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
@@ -59,8 +52,8 @@ favoriteCharacter(name: "Roger Rabbit")
 
 let villain = "Joker"
 var batman = "Batman"
-favoriteCharacter(name: villain)
-favoriteCharacter(name: batman)
+favoriteCharacter(characterName: villain)
+favoriteCharacter(characterName: batman)
 
 
 /*: question5
@@ -68,31 +61,32 @@ favoriteCharacter(name: batman)
  */
 // write your code here
 
+func jigga(hov: Int) {
+    print("I got \(hov) problems but Swift ain't one")
+}
 
-
-
-
-
-
+jigga(hov: 99)
 
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
 // write your code here
 
+func doubleTrouble(a: String, b: Int) {
+    print("My \(b) favorite band is \(a)")
+}
 
-
-
+doubleTrouble(a: "The Beatles", b: 1)
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
@@ -103,15 +97,11 @@ favoriteCharacter(name: batman)
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
 
-
-
-
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -119,11 +109,11 @@ favoriteCharacter(name: batman)
  ### 9. Let's play Mad Libs! Create a function called `madLib`. It should take three parameters: A character name, a noun, and a preposition, and print out the line "To <noun> and <preposition>, <character name>!" to the console. Don't forget to call your function to test it out!
  */
 // write your code here
+func madLib(name: String, noun: String, prep: String) {
+    print("To \(noun) and  \(prep), \(name)!")
+}
 
-
-
-
-
+madLib(name: "Keith", noun: "I only have 1 master", prep: "Preposition")
 
 
 /*: question10
@@ -131,29 +121,30 @@ favoriteCharacter(name: batman)
  */
 // write your code here
 
-
-
-
-
-
+func buzz() {
+    print("Buzz Lighter to be rescue!")
+    
+}
+buzz()
 
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
 
-
-
-
+func nothingInt()-> Int {
+    var number = Int()
+    return number
+}
 
 
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 // write your code here
+func nameHolder(characterName: String){
+   
+    print("To infinity and beyond \(characterName.uppercased())!")
+}
 
-
-
-
-
-
+nameHolder(characterName: "Woody")
