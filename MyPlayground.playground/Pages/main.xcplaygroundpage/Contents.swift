@@ -59,12 +59,14 @@ favoriteCharacter("Super Man")
 // write your code here
 
 
-let favoriteCharacterFunc = favoriteCharacter("Super Woman")
+let character1 = "SuperMan"
 
+favoriteCharacter(character1)
 
-var favoriteCharacterFuncVar = favoriteCharacter("Super Woman")
+var character2 = "Bat Man"
 
-//favoriteCharacterFuncVar = "Whats up"
+favoriteCharacter("character2")
+
 
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
