@@ -15,9 +15,11 @@
  */
 // write your code here
 
+func frozen() {
+    print("Let it go!")
+}
 
-
-
+frozen()
 
 
 
@@ -27,9 +29,11 @@
  */
 // write your code here
 
-
-
-
+func frozenAgain() {
+    let thisConstant = "Let it go!"
+    print(thisConstant)
+}
+frozenAgain()
 
 
 
@@ -37,10 +41,12 @@
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
 // write your code here
+func favoriteName(name:String) {
+    print("My favorite character is \(name).")
+}
 
-
-
-
+let star = "Angie"
+favoriteName(name: star)
 
 
 
@@ -48,83 +54,69 @@
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
 // write your code here
-
-
-
-
-
-
+let friend = "Rachel"
+favoriteName(name: friend)
+var friend2 = "Goku"
+favoriteName(name: friend2)
 
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
 // write your code here
-
-
-
-
-
-
-
+func myProblems(number: Int) {
+  
+    print("I got \(number) problems, but Swift ain't one.")
+}
+myProblems(number: 99)
 
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
 // write your code here
 
+func favoriteBand(band: String, number: Int) {
+    print("My #\(number) favorite band is \(band).")
+}
 
-
-
-
+favoriteBand(band: "Coldplay", number: 10)
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
 
-
-
-
-
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
 
-
-
-
-
-
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 /*: question9
  ### 9. Let's play Mad Libs! Create a function called `madLib`. It should take three parameters: A character name, a noun, and a preposition, and print out the line "To <noun> and <preposition>, <character name>!" to the console. Don't forget to call your function to test it out!
  */
 // write your code here
 
-
-
-
-
-
+func madLib(characterName: String, noun: String, preposition: String) {
+    print("To \(noun) and \(preposition), \(characterName).")
+}
+madLib(characterName: "Elsa", noun: "Snowman", preposition: "dance")
 
 /*: question10
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
 // write your code here
-
-
-
+func emptyArgument() -> String {
+    return "Buzz Lightyear to the rescue!"
+}
+print(emptyArgument())
 
 
 
@@ -133,7 +125,10 @@
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
-
+func noArgument() -> Int {
+ return 7
+}
+print(noArgument())
 
 
 
@@ -144,8 +139,14 @@
  */
 // write your code here
 
+func thisFunction(characterName: String) -> String {
+    let characterName = "Woody"
+    characterName.uppercased()
+    let uppercaseName = characterName.uppercased()
+    return "To infinity and beyond \(uppercaseName)!"
+}
 
-
+print(thisFunction(characterName: "Woody"))
 
 
 
