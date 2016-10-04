@@ -33,7 +33,7 @@ frozen()
 func frozenAgain () {
 let say = "let it go!"
 
-    print( "she said \(say)")
+    print(say)
 
 }
 
@@ -60,14 +60,17 @@ name("hoofy")
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
-name("hoofy")
+let myName = "chicken"
+name(myName)
 
-var name = "hoofy"
+var firstName = "duck"
 
-name = "goofy"
+name(firstName)
 
+firstName = "lelly"
 
-name(name)
+name(firstName)
+
 
 
 
@@ -97,13 +100,12 @@ number(5)
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
-func bandName (band: String, num: Int)
-{
-print("My #\(num) favourite band is \(name).")
+func bandName(band: String, num: Int){
+print("My #\(num) favourite band is \(band).")
 
 }
 
-bandName("WJ", num:2)
+bandName("WJ", num: 2)
 
 
 
@@ -114,14 +116,12 @@ bandName("WJ", num:2)
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-func badFavoriteBand(position: Int, bandName: String) {
+func badFavoriteBand(bandName: String, position: Int) {
   print("My #\(position) favorite band is \(bandName).")
 }
 
-let positionnum = 2
-let band = "The Beatles"
 
-badFavoriteBand(position: positionnum, bandName: band)
+badFavoriteBand("the beatles", position: 2)
 
 
 
@@ -132,7 +132,7 @@ badFavoriteBand(position: positionnum, bandName: band)
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-func alsoBadFavoriteBand(bandName: String, position: String) {
+func alsoBadFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName)")
 }
 
@@ -152,13 +152,9 @@ func madLib (charactername: String, noun: String, preposition: String) {
     
 }
 
-let nounName = "yeng"
-let prepositionSh = "is"
-let charactername = "ducky"
 
 
-
-madLib(charactername, noun: nounName, preposition: prepositionSh)
+madLib("homer", noun: "fridge", preposition: "behind")
 
 
 
@@ -168,12 +164,12 @@ madLib(charactername, noun: nounName, preposition: prepositionSh)
 /*: question10
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
-func wordOfTheDay () {
-    print ("Buzz Lightyear to the rescue!")
+func wordOfTheDay () -> String {
+    return "Buzz Lightyear to the rescue!"
     
 }
 
-wordOfTheDay()
+print(wordOfTheDay())
 
 
 
@@ -183,11 +179,13 @@ wordOfTheDay()
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
-func lov(name:String) -> Int {
+func lov() -> Int {
 
 return 100
 
 }
+
+print(lov())
 
 
 
@@ -199,16 +197,13 @@ return 100
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
-func characterName (name: String) {
+func characterName (name: String) -> String {
 
-print(" To infinity and beyond, \(name)!")
+return "To infinity and beyond, \(name.uppercaseString)!"
 }
 
-let name = "ying"
-    
-let uppercaseName = name.uppercaseString
 
 
-    characterName(uppercaseName)
+  print(characterName("lolly"))
 
 
