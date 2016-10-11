@@ -13,7 +13,11 @@
 /*: question1
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
-// write your code here
+func frozen() {
+    print("Let it go!")
+}
+
+frozen()
 
 
 
@@ -25,7 +29,12 @@
 /*: question2
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
-// write your code here
+func frozenAgain() {
+    let song = "Let it go!"
+    print(song)
+}
+
+frozenAgain()
 
 
 
@@ -36,7 +45,11 @@
 /*: question3
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
-// write your code here
+func favChar(character: String) {
+    print("My favorite character is \(character).")
+    }
+
+favChar(character: "Jamie Frazier")
 
 
 
@@ -44,12 +57,12 @@
 
 
 
-/*: question4
- ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
- */
-// write your code here
+///*: question4
+// ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
+// */
 
 
+//error message
 
 
 
@@ -58,7 +71,11 @@
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
-// write your code here
+func numOfProb(numbs: Int){
+    print("I got \(numbs) problems but Swift ain't one")
+}
+
+numOfProb(numbs: 3)
 
 
 
