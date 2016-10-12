@@ -15,9 +15,12 @@
  */
 // write your code here
 
+func frozen() {
+    let greeting = "Let it go!"
+    print(greeting)
+}
 
-
-
+frozen()
 
 
 
@@ -27,10 +30,12 @@
  */
 // write your code here
 
+func frozenAgain() {
+    let greetingAgain = "Let it go!"
+    print(greetingAgain)
+}
 
-
-
-
+frozenAgain()
 
 
 /*: question3
@@ -38,9 +43,11 @@
  */
 // write your code here
 
+func characterName (name: String)  {
+    print("My favorite character is \(name)")
+}
 
-
-
+characterName("Superman")
 
 
 
@@ -49,20 +56,25 @@
  */
 // write your code here
 
+let anotherConstant = "Batman"
+characterName("WhiteSnow")
 
 
 
-
-
+//It display the constant
 
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
 // write your code here
 
+func integerFunc(numb: Int)  {
+   
+print("I got \(numb) problems but Swift ain't one")
 
+}
 
-
+integerFunc(99)
 
 
 
@@ -72,19 +84,21 @@
  */
 // write your code here
 
+func favoriteBand(bandName: String, numberOne: Int) {
+    print("My #\(numberOne) favorite band is \(bandName)")
+}
 
-
-
+favoriteBand("Guns and Roses", numberOne: 1)
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand("The Beatles", position: 2)
 
 
 
@@ -95,11 +109,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand("Blink-182", position: 42)
 
 
 
@@ -112,7 +126,10 @@
  */
 // write your code here
 
-
+func madLib(characterName: String, nounPara: String, preposition: String) {
+    print("To \(nounPara) and \(preposition),\(characterName)")
+}
+madLib("Carlos", nounPara: "Simon", preposition: "The")
 
 
 
@@ -123,9 +140,11 @@
  */
 // write your code here
 
+func noArg(){
+    print("Buzz Lightyear to the rescue")
+}
 
-
-
+noArg()
 
 
 
@@ -134,8 +153,11 @@
  */
 // write your code here
 
+func numb(){
+    print(99)
+}
 
-
+numb()
 
 
 
@@ -145,7 +167,9 @@
 // write your code here
 
 
-
-
+func upperCharacter(personaje: String)  {
+    print("To infinity and beyond, \(personaje.uppercaseString)")
+}
+upperCharacter("Banderas")
 
 
