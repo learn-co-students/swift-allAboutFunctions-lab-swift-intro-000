@@ -129,8 +129,12 @@ alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 /*: question9
  ### 9. Let's play Mad Libs! Create a function called `madLib`. It should take three parameters: A character name, a noun, and a preposition, and print out the line "To <noun> and <preposition>, <character name>!" to the console. Don't forget to call your function to test it out!
  */
-// write your code here
+func madLib(charName: String, noun: String, preposition: String ) {
+    print("To \(noun) and \(preposition), \(charName)!")
 
+}
+
+madLib(charName: "Thor", noun: "man", preposition: "he")
 
 
 
@@ -140,8 +144,11 @@ alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 /*: question10
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
-// write your code here
+func rescueSlogan() -> String {
+    return "Buzz Lightyear to the rescue!"
+}
 
+rescueSlogan()
 
 
 
@@ -151,8 +158,11 @@ alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
-// write your code here
+func anyNum() -> Int{
+    return 7
+}
 
+anyNum()
 
 
 
@@ -161,7 +171,12 @@ alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
-// write your code here
+func motivatingChant(charName: String) -> String {
+    charName.uppercased()
+    return "To infinity and beyond, \(charName)!"
+}
+
+motivatingChant(charName: "PeeWee")
 
 
 
