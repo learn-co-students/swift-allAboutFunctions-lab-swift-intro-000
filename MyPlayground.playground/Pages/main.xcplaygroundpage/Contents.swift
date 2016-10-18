@@ -13,7 +13,9 @@
 /*: question1
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
-// write your code here
+func frozen() {
+    print("Let it go!")
+}
 
 
 
@@ -25,7 +27,10 @@
 /*: question2
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
-// write your code here
+func frozenAgain() {
+    let text = "Let it go!"
+    print(text)
+}
 
 
 
@@ -36,7 +41,9 @@
 /*: question3
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
-// write your code here
+func charName(name: String) {
+    print("My favorite character is \(name)")
+}
 
 
 
@@ -47,7 +54,14 @@
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
-// write your code here
+let friend1FavCharacter = "Batman"
+charName(name: friend1FavCharacter)
+
+var friend2FavCharacter = "Vader"
+charName(name: friend2FavCharacter)
+
+friend2FavCharacter = "Darth Vader"
+charName(name: friend2FavCharacter)
 
 
 
@@ -58,7 +72,10 @@
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
-// write your code here
+func ninety9Probs(num: Int) {
+    print("I got \(num) problems but Swift ain't one.")
+}
+
 
 
 
@@ -70,7 +87,9 @@
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
-// write your code here
+func favBand(bandName: String, rank: Int) {
+    print("My #\(rank) favorite band is \(bandName).")
+}
 
 
 
@@ -80,11 +99,11 @@
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position:  2)
 
 
 
