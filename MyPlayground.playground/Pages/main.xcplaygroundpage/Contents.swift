@@ -114,11 +114,11 @@ badFavoriteBand(bandName: "The Beatles", position:  2)
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
