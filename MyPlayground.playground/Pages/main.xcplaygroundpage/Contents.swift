@@ -164,6 +164,11 @@ buzzLightyear()
 
 
 
+func luckyNumber() -> Int {
+    return 7
+}
+
+print(luckyNumber())
 
 
 
