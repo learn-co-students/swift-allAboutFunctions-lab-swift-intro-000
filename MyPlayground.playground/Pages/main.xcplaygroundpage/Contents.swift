@@ -38,14 +38,20 @@ favoriteCharacter(name: "Elsa")
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
-var frozenCharacter = favoriteCharacter(name: "Elsa")
-favoriteCharacter(name: "Anna")
+let myFavCharacter = "Chewbacca"
+favoriteCharacter(name: myFavCharacter)
+var anotherCharacter = "Luke Skywalker"
+favoriteCharacter(name: anotherCharacter)
+anotherCharacter = "Princess Leia"
+favoriteCharacter(name: anotherCharacter)
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
 func problems(numberOfProblems: Int) {
     print("I got \(numberOfProblems) problems but Swift ain't one")
 }
+
+problems(numberOfProblems: 34)
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
@@ -81,24 +87,24 @@ madLib(characterName: "Woody", noun: "infinity", preposition: "beyond")
 /*: question10
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
-func toyStory() -> String {
-    let buzzQuote = "Buzz Lightyear to the rescue!"
-    return buzzQuote
+func buzzLightyear() -> String {
+    return "Buzz Lightyear to the rescue!"
 }
+
+print(buzzLightyear())
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
 func aNumber() -> Int {
-    let randomNumber = 3
-    return randomNumber
+    return 3
 }
+
+print(aNumber())
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 func toyStoryQuote(name: String) -> String {
-    let uppercaseName = name.uppercased()
-    let phrase = "To infinity and beyond, \(uppercaseName)!"
-    return phrase
+    return "To infinity and beyond, \(name.uppercased())!"
 }
 
-toyStoryQuote(name: "Buzz")
+print(toyStoryQuote(name: "Buzz"))
