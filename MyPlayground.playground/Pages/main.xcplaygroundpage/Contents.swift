@@ -14,6 +14,10 @@
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
 // write your code here
+func frozen(){
+    
+    print("Let it go!")
+}
 
 
 
@@ -27,7 +31,10 @@
  */
 // write your code here
 
-
+func frozenAgain(){
+    let sing = "Let it go!"
+    print(sing)
+}
 
 
 
@@ -38,7 +45,9 @@
  */
 // write your code here
 
-
+func person(_ person: String){
+    print("My favorite character is \(person)")
+}
 
 
 
@@ -50,7 +59,9 @@
 // write your code here
 
 
+let favorite = "Mike"
 
+person(favorite)
 
 
 
@@ -60,7 +71,9 @@
  */
 // write your code here
 
-
+func noProb(number: Int){
+    print("I got \(number) problems but Swift ain't one")
+}
 
 
 
@@ -72,7 +85,9 @@
  */
 // write your code here
 
-
+func favBand(name: String, number: Int){
+    print("My #\(number) favorite band is \(name).")
+}
 
 
 
@@ -80,11 +95,11 @@
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position:  2)
 
 
 
@@ -95,11 +110,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: String) {
+   print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: "42")
 
 
 
@@ -112,6 +127,10 @@
  */
 // write your code here
 
+func madLib(charName: String, noun: String, preposition: String)
+{
+    print("To \(noun) and \(preposition), \(charName)")
+}
 
 
 
@@ -123,8 +142,10 @@
  */
 // write your code here
 
-
-
+func Buzz(){
+    
+    print("Buzz Lightyear to the rescue!")
+}
 
 
 
@@ -133,7 +154,9 @@
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
-
+func number() -> Int{
+    return 28
+}
 
 
 
@@ -144,8 +167,10 @@
  */
 // write your code here
 
-
-
+func name(char_name: String) -> String{
+    
+    return ("To infinity and beyond \(char_name)")
+}
 
 
 
