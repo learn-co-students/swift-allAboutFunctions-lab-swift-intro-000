@@ -45,7 +45,7 @@ func favCharacter(name: String){
     print("My favorite character is \(name)")
 }
 
-favCharacter(name: "Sirius Black")
+favCharacter(name:"Sirius Black")
 
 
 
@@ -141,7 +141,7 @@ func BuzzStatement() -> String {
     return "Buzz Lightyear to the rescue!"
 }
 
-BuzzStatement()
+print(BuzzStatement())
 
 
 
@@ -152,7 +152,7 @@ func gimmeAnInt() -> Int {
     return 342
 }
 
-gimmeAnInt()
+print(gimmeAnInt())
 
 
 
@@ -161,10 +161,10 @@ gimmeAnInt()
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 func buzzyBuzz(name: String) -> String {
-    return "To infinity and beyond \(name)!"
+    return "To infinity and beyond \(name.uppercased())!"
 }
 
-buzzyBuzz(name: "Woody")
+print(buzzyBuzz(name: "Woody"))
 
 
 
