@@ -107,12 +107,12 @@ badFavoriteBand("The Beatles", 2)
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-func alsoBadFavoriteBand(bandName: String, position: String) {
+func alsoBadFavoriteBand(bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName).")
 }
 
 
-alsoBadFavoriteBand(bandName: "Blink-182", position: "42")
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -143,7 +143,7 @@ func buzz() -> String{
     return "Buzz Lightyear to the rescue!"
 }
 
-buzz()
+print(buzz())
 
 
 
@@ -158,7 +158,7 @@ func num() -> Int {
     return 3
 }
 
-num()
+print(num())
 
 
 
@@ -174,6 +174,6 @@ func charName(name: String) -> String{
     return "To infinity and beyond, \(uppered)!"
 }
 
-charName(name: "Woody")
+print(charName(name: "Woody"))
 
 
