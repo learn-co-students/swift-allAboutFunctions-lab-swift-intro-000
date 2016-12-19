@@ -6,7 +6,7 @@
 
 ## Overview
 
-In this lab, you'll create functions that take no and multiple arguments as well as functions that return values. 
+In this lab, you'll create functions that take no arguments, multiple arguments as well as functions that return different values. 
 
 ## Instructions
 
