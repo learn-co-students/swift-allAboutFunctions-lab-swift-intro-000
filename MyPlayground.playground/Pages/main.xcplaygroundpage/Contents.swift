@@ -15,10 +15,11 @@
  */
 // write your code here
 
+func frozen() {
+    print("Let it go!")
+}
 
-
-
-
+frozen()
 
 
 
@@ -27,8 +28,12 @@
  */
 // write your code here
 
+func frozenAgain() {
+    let newMessage = "Let it go!"
+    print(newMessage)
+}
 
-
+frozenAgain()
 
 
 
@@ -38,8 +43,11 @@
  */
 // write your code here
 
+func characterName(Name: String) {
+    print("My favorite character is \(Name)")
+}
 
-
+characterName(Name: "Shrek")
 
 
 
@@ -49,7 +57,11 @@
  */
 // write your code here
 
+let newCharacter = "Flipper"
 
+characterName(Name: newCharacter)
+
+// newCharacter = "Mr Ed"
 
 
 
@@ -60,9 +72,11 @@
  */
 // write your code here
 
+func myProblems(numProblems: Int) {
+    print("I got \(numProblems) problems but Swift ain't one")
+}
 
-
-
+myProblems(numProblems: 20)
 
 
 
@@ -72,7 +86,11 @@
  */
 // write your code here
 
+func favoriteBand(Number: Int, favBand: String) {
+    print("My #\(Number) favorite band is the \(favBand).")
+}
 
+favoriteBand(Number: 1, favBand: "Jimi Hendrix Experience")
 
 
 
@@ -80,11 +98,11 @@
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
@@ -95,11 +113,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+   print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,9 +130,11 @@
  */
 // write your code here
 
+func madLib(Character: String, Noun: String, Preposition: String) {
+    print("To \(Noun) and \(Preposition), \(Character)")
+}
 
-
-
+madLib(Character: "Shrek", Noun: "Be", Preposition: "or not to be")
 
 
 
@@ -123,8 +143,11 @@
  */
 // write your code here
 
+func buzzLightYear() -> String {
+    return "Buzz Lightyear to the rescue!"
+}
 
-
+print(buzzLightYear())
 
 
 
@@ -135,8 +158,11 @@
 // write your code here
 
 
+func anyNumber() -> Int {
+    return 25
+}
 
-
+print(anyNumber())
 
 
 /*: question12
@@ -145,9 +171,12 @@
 // write your code here
 
 
+func charaName(charaName: String) -> String{
+    return "To infinity and beyond \(charaName.uppercased())!"
+}
 
 
 
-
+print(charaName(charaName: "andy"))
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
 
