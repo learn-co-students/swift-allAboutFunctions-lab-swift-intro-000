@@ -15,7 +15,9 @@
  */
 // write your code here
 
-
+func frozen() {
+    print("Let it go!")
+}
 
 
 
@@ -28,7 +30,10 @@
 // write your code here
 
 
-
+func froenAgain() {
+    let catchPhrase: String = "Let it go!"
+    print(catchPhrase)
+}
 
 
 
@@ -37,7 +42,9 @@
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
 // write your code here
-
+func favoriteCharacter(characterName: String) {
+    print("My favorite character is \(characterName).")
+}
 
 
 
@@ -48,21 +55,24 @@
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
 // write your code here
+let favoriteSuperHero: String = "Batman"
+favoriteCharacter(characterName: favoriteSuperHero)
 
+var secondFavoriteSuperHero: String = "Superman"
+favoriteCharacter(characterName: secondFavoriteSuperHero)
 
-
-
-
-
-
+secondFavoriteSuperHero = "Cyclops"
+favoriteCharacter(characterName: secondFavoriteSuperHero)
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
 // write your code here
 
+func copywriteTrap(numberOfProblems: Int) {
+    print("I've got \(numberOfProblems) problems but Swift ain't one.")
+}
 
-
-
+copywriteTrap(numberOfProblems: 10)
 
 
 
@@ -72,19 +82,21 @@
  */
 // write your code here
 
+func bandRanking(band: String, ranking: Int ) {
+    print("My #\(ranking) favorite band is \(band)")
+}
 
-
-
+bandRanking(band: "All Time Low", ranking: 12)
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles",position: 2)
 
 
 
@@ -95,11 +107,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,10 +124,12 @@
  */
 // write your code here
 
+func madLips(name: String, noun: String, preposition: String) {
+    print("To \(noun) and \(preposition), \(name)!")
+}
 
 
-
-
+madLips(name: "Ceasar", noun: "Jump", preposition: "under")
 
 
 /*: question10
@@ -123,9 +137,11 @@
  */
 // write your code here
 
+func starCommand() {
+    print("Buzz Lightyear to the rescue!")
+}
 
-
-
+starCommand()
 
 
 
@@ -134,7 +150,9 @@
  */
 // write your code here
 
-
+func randomNumber() -> Int {
+    return 25
+}
 
 
 
@@ -144,7 +162,9 @@
  */
 // write your code here
 
-
+func finalFunction(characterName: String)-> String {
+    return "To infinity and beyond, \(characterName)!".uppercased()
+}
 
 
 
