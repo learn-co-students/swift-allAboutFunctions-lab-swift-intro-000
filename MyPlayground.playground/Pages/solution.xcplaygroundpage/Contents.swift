@@ -24,7 +24,7 @@ frozen()
 
 
 //: ### Question 3
-func favoriteCharacter(character: String) {
+func favoriteCharacter(_ character: String) {
     print("My favorite character is \(character).")
 }
 
@@ -47,7 +47,7 @@ favoriteCharacter(anotherCharacter)
 
 
 //: ### Question 5
-func problems(numberOfProblems: Int) {
+func problems(_ numberOfProblems: Int) {
     print("I got \(numberOfProblems) problems but Swift ain't one")
 }
 
@@ -58,7 +58,7 @@ problems(47)
 
 
 //: ### Question 6
-func favoriteBand(band: String, position: Int) {
+func favoriteBand(_ band: String, position: Int) {
     print("My #\(position) favorite band is \(band).")
 }
 
@@ -69,7 +69,7 @@ favoriteBand("Nickelback", position: 512)
 
 
 //: ### Question 7
-func badFavoriteBand(bandName: String, position: Int) {
+func badFavoriteBand(_ bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName).")
 }
 
@@ -82,18 +82,13 @@ badFavoriteBand("The Beatles", position: 2)
 
 //: ### Question 8
 //: You should change the `position` parameter to be of type `Int` instead of `String`
-func alsoBadFavoriteBand(bandName: String, position: Int) {
+func alsoBadFavoriteBand(_ bandName: String, position: Int) {
     print("My #\(position) favorite band is \(bandName)")
 }
 
 alsoBadFavoriteBand("Blink-182", position: 42)
-
-
-
-
-
 //: ### Question 9
-func madLib(characterName: String, noun: String, preposition: String) {
+func madLib(_ characterName: String, noun: String, preposition: String) {
     print("To \(noun) and \(preposition), \(characterName)!")
 }
 
@@ -126,8 +121,8 @@ print(luckyNumber())
 
 
 //: ### Question 12
-func infinityAndBeyond(character: String) -> String {
-    return "To infinity and beyond, \(character.uppercaseString)!"
+func infinityAndBeyond(_ character: String) -> String {
+    return "To infinity and beyond, \(character.uppercased())!"
 }
 
 print(infinityAndBeyond("Woody"))
