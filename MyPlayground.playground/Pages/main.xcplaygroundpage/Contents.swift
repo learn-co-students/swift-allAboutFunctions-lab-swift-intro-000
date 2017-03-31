@@ -16,9 +16,10 @@
 // write your code here
 
 
-
-
-
+func frozen() {
+    print("Let it go!")
+}
+frozen()
 
 
 
@@ -28,10 +29,13 @@
 // write your code here
 
 
+func frozenAgain(){
+    let lyric = "Let it go!"
+    print(lyric)
+}
 
 
-
-
+frozenAgain()
 
 /*: question3
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
@@ -39,7 +43,9 @@
 // write your code here
 
 
-
+func favoriteCharacter(name: String){
+    print("My favorite character is \(favoriteCharacter)")
+}
 
 
 
@@ -50,8 +56,9 @@
 // write your code here
 
 
+let favoriteCharacter = "Milton"
 
-
+favoriteCharacter(name: favoriteCharacter)
 
 
 
@@ -61,10 +68,12 @@
 // write your code here
 
 
+func problems(numberOfProblems: Int){
+    print("I got \(numberOfProblems) problems but Swift ain't one")
+}
 
 
-
-
+problems(numberOfProblems: 99)
 
 
 /*: question6
@@ -74,32 +83,36 @@
 
 
 
+func bankRank(band: String, rank: Int){
+    print("My #\(rank) favorite band is \(band)")
+}
 
+let band = "Nirvana"
+let rank = 1
 
-
+bankRank(band: band, rank: rank)
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
 
 
 
+func badFavoriteBand(bandName: String, position: Int) {
+print("My #\(position) favorite band is \(bandName).")
+}
 
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+ print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -111,11 +124,16 @@
  ### 9. Let's play Mad Libs! Create a function called `madLib`. It should take three parameters: A character name, a noun, and a preposition, and print out the line "To <noun> and <preposition>, <character name>!" to the console. Don't forget to call your function to test it out!
  */
 // write your code here
+func madLib(name: String, noun: String, preposition: String){
+    print("To \(noun) and \(preposition), \(name)!")
+}
 
 
+let name = "Link"
+let noun = "apple"
+let preposition = "behind"
 
-
-
+madLib(name: name, noun: noun, preposition: preposition)
 
 
 /*: question10
@@ -123,7 +141,9 @@
  */
 // write your code here
 
-
+func rescue(){
+    print("Buzz Lightyear to the rescue!")
+}
 
 
 
@@ -135,18 +155,23 @@
 // write your code here
 
 
+func randomNumber() -> Int {
+    return 3
+}
 
-
-
+print(randomNumber())
 
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 // write your code here
 
+func buzz(character: String){
+    print("To infinity and beyond, \(character.uppercased())!")
+}
 
-
-
+let character = "Woody"
+buzz(character: character)
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
