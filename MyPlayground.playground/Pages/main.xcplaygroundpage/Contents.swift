@@ -15,8 +15,10 @@
  */
 // write your code here
 
-
-
+func frozen()
+{
+    print("Let it go!")
+}
 
 
 
@@ -27,7 +29,11 @@
  */
 // write your code here
 
-
+func frozenAgain()
+{
+    let song = "Let it go!"
+    print (song)
+}
 
 
 
@@ -38,7 +44,10 @@
  */
 // write your code here
 
-
+func getChar(name: String)
+{
+    print("My favorite character is \(name).")
+}
 
 
 
@@ -50,21 +59,22 @@
 // write your code here
 
 
+let charName = "Elsa"
 
-
-
-
+getChar(name: charName)
 
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
 // write your code here
 
+func jayZ(num: Int)
+{
+    print("I got \(num) problems but Swift aint one")
+}
 
 
-
-
-
+jayZ(num: 99)
 
 
 /*: question6
@@ -72,19 +82,21 @@
  */
 // write your code here
 
-
-
+func getBand(_ name: String , num: Int)
+{
+    print ("My #\(num) favorite band is \(name).")
+}
 
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(_ bandName: String, _ position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand("The Beatles", 2)
 
 
 
@@ -95,11 +107,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,9 +124,12 @@
  */
 // write your code here
 
+func madLib(_ charName: String , _ noun: String, _ prep: String)
+{
+    print("To \(noun) and \(prep), \(charName)!")
+}
 
-
-
+madLib("Elsa", "New York", "on")
 
 
 
@@ -124,8 +139,10 @@
 // write your code here
 
 
-
-
+func saying()
+{
+    print ("Buzz Lightyear to the rescue!")
+}
 
 
 
@@ -135,7 +152,9 @@
 // write your code here
 
 
-
+func num() -> Int{
+    return 34
+}
 
 
 
@@ -144,6 +163,9 @@
  */
 // write your code here
 
+func getChar(_ name : String) -> String{
+    return "To infinity and beyond \(name)!"
+}
 
 
 
