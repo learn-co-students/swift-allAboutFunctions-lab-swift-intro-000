@@ -13,8 +13,14 @@
 /*: question1
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
-// write your code here
+import UIKit
 
+// write your code here
+func frozen() {
+    print("Let it go!")
+}
+
+frozen()
 
 
 
@@ -27,9 +33,12 @@
  */
 // write your code here
 
+func frozenAgain() {
+    let frozen = "Let it go!"
+    print(frozen)
+}
 
-
-
+frozenAgain()
 
 
 
@@ -38,8 +47,11 @@
  */
 // write your code here
 
+func myFavoriteCharacter(who character: String) {
+    print("My favorite character is \(character)")
+}
 
-
+myFavoriteCharacter(who: "Gandalf")
 
 
 
@@ -49,21 +61,27 @@
  */
 // write your code here
 
+let myFavorite = "Frodo"
+myFavoriteCharacter(who: myFavorite)
 
+var myPrecious = "Gollem"
+myFavoriteCharacter(who: myPrecious)
 
+myPrecious = "Eowyn"
+myFavoriteCharacter(who: myPrecious)
 
-
+// no difference in text printed in the console.
 
 
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
 // write your code here
+func numberOfProblems(_ count: Int) {
+    print("I got \(count) problems but Swift ain't one")
+}
 
-
-
-
-
+numberOfProblems(8)
 
 
 
@@ -71,8 +89,12 @@
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
 // write your code here
+func myFavorateBand(whichBand Band: String, whichPosition position: Int) {
+    print("My #\(position) favorate band is \(Band)")
+}
 
-
+myFavorateBand(whichBand: "U2", whichPosition: 1)
+myFavorateBand(whichBand: "Kensington", whichPosition: 4)
 
 
 
@@ -80,63 +102,60 @@
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
 
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
-
-
-
-
+// forgot to add the parameter names in the functioncall.
 
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
 
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
-
-
-
+// Position in functioncall should be an Int instead of a String.
 
 
 /*: question9
  ### 9. Let's play Mad Libs! Create a function called `madLib`. It should take three parameters: A character name, a noun, and a preposition, and print out the line "To <noun> and <preposition>, <character name>!" to the console. Don't forget to call your function to test it out!
  */
 // write your code here
+func madLib(name: String, noun: String, preposition: String) {
+    print("To \(noun) and \(preposition), \(name)")
+}
 
-
-
-
-
+madLib(name: "Jim", noun: "live", preposition: "die")
 
 
 /*: question10
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
 // write your code here
+func saviourOfTheGalaxy() -> String {
+    return("Buzz Lightyear to the rescue!")
+}
 
-
-
-
-
+print(saviourOfTheGalaxy())
 
 
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
+func numberGenerator() -> Int {
+    return(Int(arc4random_uniform(UInt32(100))))
+}
 
-
-
-
+print("Returned number is \(numberGenerator())")
+print("Returned number is \(numberGenerator())")
+print("Returned number is \(numberGenerator())")
+print("Returned number is \(numberGenerator())")
 
 
 /*: question12
@@ -144,8 +163,11 @@
  */
 // write your code here
 
+func toBoldlyGo(name: String) -> String {
+    return("To infinity and beyond, \(name.uppercased())")
+}
 
-
+print(toBoldlyGo(name: "Spock"))
 
 
 
