@@ -1,4 +1,5 @@
 /*: Outline
+/*: Outline
  
  
  # Functions
@@ -13,7 +14,9 @@
 /*: question1
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
-// write your code here
+func frozen() {
+    print("Let it go!")
+}
 
 
 
@@ -25,7 +28,10 @@
 /*: question2
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
-// write your code here
+func frozen2() {
+    let c = "Let it go! -2"
+    print(c)
+}
 
 
 
@@ -36,7 +42,11 @@
 /*: question3
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
-// write your code here
+func prob3(name: String) {
+    print("my favorite character is \(name)")
+}
+
+prob3(name: "Joe")
 
 
 
@@ -47,7 +57,10 @@
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
-// write your code here
+let c = "JOE"
+prob3(name: c)
+var d = "prob4"
+prob3(name: d)
 
 
 
@@ -58,10 +71,11 @@
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
-// write your code here
+func five(n: Int) {
+    print("I got \(n) problems but swift aint one")
+}
 
-
-
+five(n: 5)
 
 
 
@@ -70,9 +84,12 @@
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
-// write your code here
+func six(name: String, number: Int) {
+    print("My #\(number) favorite band is \(name)")
 
+}
 
+six(name: "Armin", number: 4)
 
 
 
@@ -88,7 +105,7 @@
 
 
 
-
+//it didn't specif bandName or position in the function calling
 
 
 
@@ -100,6 +117,7 @@
 //}
 //
 //alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+//should have had quotations around "42" to identify it as a string
 
 
 
@@ -113,8 +131,11 @@
 // write your code here
 
 
+func madlib(name: String, noun: String, preposition: String) {
+    print("To \(noun), and \(preposition), \(name)")
+}
 
-
+madlib(name: "Joe", noun: "park", preposition: "town")
 
 
 
@@ -124,16 +145,20 @@
 // write your code here
 
 
+func ten() -> String{
+    return("Buzz lightyear to the rescue!")
+}
 
-
-
+print(ten())
 
 
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
-// write your code here
-
+func eleven() ->Double{
+    return 11.45
+}
+print(eleven())
 
 
 
@@ -142,8 +167,10 @@
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
-// write your code here
-
+func twelve(name: String) ->String{
+    return("To infinite and beyond \(name.uppercased())")
+}
+print(twelve(name: "Joe"))
 
 
 
