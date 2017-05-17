@@ -175,12 +175,11 @@ print("\(testReturn2()) is \(characterName)'s favorite number")
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
-func lastFunc(characterName: String){
-    let characterName2 = characterName.uppercased()
-    print("To infinity and beyond, \(characterName2)!")
+func lastFunc(characterName: String)->String{
+    return ("To infinity and beyond, \(characterName.uppercased())!")
 }
 
-lastFunc(characterName: characterName)
+print(lastFunc(characterName: characterName))
 
 
 
