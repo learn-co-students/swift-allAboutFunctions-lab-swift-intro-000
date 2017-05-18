@@ -16,16 +16,24 @@
 // write your code here
 
 
+func frozen() {
+    print("Let it go!")
+}
 
-
-
-
-
+frozen()
 
 /*: question2
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
 // write your code here
+
+func frozenAgain() {
+    let ice = "Let it go!"
+    print(ice)
+}
+frozenAgain()
+
+
 
 
 
@@ -38,7 +46,11 @@
  */
 // write your code here
 
+func gameOfTheThrones(Jon Snow: String) {
+    print("My favorite character is \(Snow)")
 
+}
+gameOfTheThrones(Jon: "Jon Snow")
 
 
 
@@ -49,9 +61,9 @@
  */
 // write your code here
 
-
-
-
+let bestCharacter = "Arya Stark"
+var Jon = bestCharacter
+gameOfTheThrones(Jon: Jon)
 
 
 
@@ -60,10 +72,12 @@
  */
 // write your code here
 
+func numbers(number: Double) {
+    print("I got \(number) problems but Swift ain't one")
 
+}
 
-
-
+numbers(number: 100)
 
 
 
@@ -72,7 +86,11 @@
  */
 // write your code here
 
+func favoriteBand(numberOf: Int, nameOf: String) {
+    print("My #\(numberOf)st favorite band is \(nameOf).")
 
+}
+favoriteBand(numberOf: 1, nameOf: "Backstreet boys")
 
 
 
@@ -80,42 +98,47 @@
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+//line 103,107 was incorrect! No arguments was wrote. There 2 ways to fix this function.
 
+func badFavoriteBand(_ bandName: String, _ position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
 
+badFavoriteBand("The Beatles", 2)
 
-
-
-
+func badFavoriteBand(bandName: String, position: Int) {
+print("My #\(position) favorite band is \(bandName).")
+}
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+//position is a String and we can not put a number, we can change position to the: Int or we can write position: "42" it will take like a String
+
+
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
-
-
+func alsoBadFavoriteBand(bandName: String, position: String) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+alsoBadFavoriteBand(bandName: "Blink-182", position: "42")
 
 
 /*: question9
  ### 9. Let's play Mad Libs! Create a function called `madLib`. It should take three parameters: A character name, a noun, and a preposition, and print out the line "To <noun> and <preposition>, <character name>!" to the console. Don't forget to call your function to test it out!
  */
 // write your code here
+func madLib(charakterName: String, noun: String, preposition: String) {
+    print("To \(noun) and \(preposition), \(charakterName)")
 
-
-
-
-
+}
+madLib(charakterName: "brother", noun: "Jon", preposition: "he's")
 
 
 /*: question10
@@ -123,10 +146,12 @@
  */
 // write your code here
 
+func buzz() -> String {
+    let buzz = "Buzz Lightyear to the rescue!"
+    return buzz;
 
-
-
-
+}
+print(buzz())
 
 
 /*: question11
@@ -134,8 +159,13 @@
  */
 // write your code here
 
+func myFriend() -> Int {
+    
+    return 7
+    
+}
 
-
+print(myFriend())
 
 
 
@@ -144,7 +174,12 @@
  */
 // write your code here
 
-
+func dexter(morgon: String) -> String {
+    let info = "To infinity and beyond"
+    print("\(info), \(morgon)!")
+    return info
+}
+dexter(morgon: "Dexer Morgon")
 
 
 
