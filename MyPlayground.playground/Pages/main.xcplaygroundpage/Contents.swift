@@ -126,11 +126,11 @@ madLib(character: "Bond", noun: "Watermelon", preposition: "stare")
 /*: question10
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
-func woodySays () {
-    print("Buzz Lightyear to the rescue!")
+func woodySays () -> String {
+    return "Buzz Lightyear to the rescue!"
 }
 
-woodySays()
+print(woodySays())
 
 
 
@@ -139,11 +139,11 @@ woodySays()
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
-func numberGen() {
-    return UInt64.random(lower: 1, upper: 7)
+func numberGen() -> Int {
+    return 88
 }
 
-numberGen()
+print(numberGen())
 
 
 
@@ -153,11 +153,10 @@ numberGen()
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
-func story (name: String) {
-    name.uppercased()
-    return("To infinity and beyond, \(name)!")
+func story (name: String) -> String {
+    return("To infinity and beyond, \(name.uppercased())!")
 }
 
-story(name: "Larry")
+print(story(name: "Larry"))
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
 
