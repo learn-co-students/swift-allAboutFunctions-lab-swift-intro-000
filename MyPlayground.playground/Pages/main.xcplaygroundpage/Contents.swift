@@ -15,7 +15,9 @@
  */
 // write your code here
 
-
+func frozen(){
+    print("Let it go!")
+}
 
 
 
@@ -27,7 +29,11 @@
  */
 // write your code here
 
-
+func frozenAgain(){
+    let saying: String = "Let it go!"
+    print(saying)
+}
+frozenAgain()
 
 
 
@@ -38,19 +44,23 @@
  */
 // write your code here
 
+func favChar(charName: String){
+    print("My favorite character is \(charName)")
+}
 
-
-
-
-
+favChar(charName: "Drake")
 
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
 // write your code here
 
-
-
+let myCharName = "Greg"
+favChar(charName: myCharName)
+var anotherChar = "Timmy"
+favChar(charName: anotherChar)
+anotherChar = "Felicia"
+favChar(charName: anotherChar)
 
 
 
@@ -60,7 +70,11 @@
  */
 // write your code here
 
+func noProblem(number: Int){
+    print("I got \(number) problems but Swift ain't one")
+}
 
+noProblem(number: 99)
 
 
 
@@ -71,20 +85,22 @@
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
 // write your code here
+func music(band: String, muNumber: Int){
+    print("My #\(muNumber) favorite band is \(band)")
+}
 
-
-
+music(band: "Nirvanna", muNumber: 1)
 
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+   print("My #\(position) favorite band is \(bandName).")
+}
+
+    badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
@@ -95,11 +111,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,6 +128,11 @@
  */
 // write your code here
 
+func madLib(charName: String, noun: String, preposition: String){
+    print("To \(noun) and \(preposition), \(charName)!")
+}
+
+madLib(charName: "Tammy", noun: "cheese", preposition: "not eating it")
 
 
 
@@ -123,9 +144,11 @@
  */
 // write your code here
 
+func shout(){
+    print("Buzz Lightyear to the rescue!")
+}
 
-
-
+shout()
 
 
 
@@ -133,7 +156,11 @@
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
+func any(){
+    print(9)
+}
 
+any()
 
 
 
@@ -144,8 +171,10 @@
  */
 // write your code here
 
-
-
+func last(flyName: String){
+    print("To infinity and beyond, \(flyName.uppercased())!")
+}
+last(flyName: "Frank")
 
 
 
