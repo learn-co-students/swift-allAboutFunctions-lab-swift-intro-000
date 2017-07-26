@@ -14,11 +14,9 @@
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
 // write your code here
-
-
-
-
-
+func frozen(){
+    print("Let it go!")
+}
 
 
 
@@ -28,9 +26,10 @@
 // write your code here
 
 
-
-
-
+func frozenAgain(){
+    let word = "Let it go!"
+    print(word)
+}
 
 
 /*: question3
@@ -38,7 +37,9 @@
  */
 // write your code here
 
-
+func printChar(characterName:String){
+    print("My favorite character is \(characterName)")
+}
 
 
 
@@ -50,7 +51,7 @@
 // write your code here
 
 
-
+printChar(characterName: "Woody")
 
 
 
@@ -61,7 +62,9 @@
 // write your code here
 
 
-
+func solve(numberOfProblems:Int){
+    print("I got \(numberOfProblems) problems but Swift ain't one")
+}
 
 
 
@@ -72,7 +75,9 @@
  */
 // write your code here
 
-
+func bandName(name:String, rank:Int){
+    print("My #\(rank) favorite band is \(name)")
+}
 
 
 
@@ -80,26 +85,19 @@
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+   print("My #\(position) favorite band is \(bandName).")
+}
 
-
-
-
-
-
+badFavoriteBand(bandName: "The Beatles", position:2)
 
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: String) {
+   print("My #\(position) favorite band is \(bandName)")
+}
+alsoBadFavoriteBand(bandName: "Blink-182", position: "42")
 
 
 
@@ -112,8 +110,10 @@
  */
 // write your code here
 
-
-
+    func madLib(noun:String, preposition:String, characterName:String){
+        print("To \(noun) and \(preposition), \(characterName)!")
+}
+    madLib(noun:"free", preposition: "Must", characterName: "Jack")
 
 
 
@@ -123,7 +123,9 @@
  */
 // write your code here
 
-
+func buzzLight() -> String{
+        return "Buzz Lightyear to the rescue!"
+}
 
 
 
@@ -134,7 +136,9 @@
  */
 // write your code here
 
-
+    func anyNumber() -> Int{
+        return 11
+}
 
 
 
@@ -143,7 +147,9 @@
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 // write your code here
-
+    func buzz(characterName:String) -> String{
+        return "To infinity and beyond, \(characterName.uppercased())"
+}
 
 
 
