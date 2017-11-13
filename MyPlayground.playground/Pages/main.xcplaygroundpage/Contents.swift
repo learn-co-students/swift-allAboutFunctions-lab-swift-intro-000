@@ -14,7 +14,7 @@
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
 // write your code here
-
+// solutions to all about functions lab
 
 
 
