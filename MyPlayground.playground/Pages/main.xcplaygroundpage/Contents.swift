@@ -15,7 +15,9 @@
  */
 // write your code here
 
-
+func frozen(){
+    print("Let it go!")
+}
 
 
 
@@ -28,8 +30,11 @@
 // write your code here
 
 
-
-
+func frozenAgain(){
+    let scream = "Let it go!"
+    print(scream)
+}
+frozenAgain()
 
 
 
@@ -38,8 +43,10 @@
  */
 // write your code here
 
-
-
+func myFaveDbzChar(_ name: String){
+    print("My favorite character is \(name)")
+}
+myFaveDbzChar("Gohan")
 
 
 
@@ -49,7 +56,13 @@
  */
 // write your code here
 
+let god = "god"
+var pokemon = "mewTwo"
 
+myFaveDbzChar(god)
+myFaveDbzChar(pokemon)
+pokemon = "Charizard"
+myFaveDbzChar(pokemon)
 
 
 
@@ -60,7 +73,10 @@
  */
 // write your code here
 
-
+func swiftProblems(_ howMany: Int){
+    print("I got \(howMany) problems but Swift ain't one.")
+}
+swiftProblems(999)
 
 
 
@@ -72,8 +88,10 @@
  */
 // write your code here
 
-
-
+func noBand(_ name: String,_ noFave: Int){
+    print("My #\(noFave) favourite band is \(name)")
+}
+noBand("maroon5", 3)
 
 
 
@@ -86,7 +104,10 @@
 //
 //badFavoriteBand("The Beatles", 2)
 
-
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+badFavoriteBand(bandName: "The beatles",position: 2)
 
 
 
@@ -102,7 +123,10 @@
 //alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
-
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -113,7 +137,10 @@
 // write your code here
 
 
-
+func madLib(_ charName: String,_ noun: String,_ preposition: String){
+    print("To \(noun) and \(preposition), \(charName)!")
+}
+madLib("Goku", "Hyperbolic Time Chamber", "Train")
 
 
 
@@ -124,7 +151,10 @@
 // write your code here
 
 
-
+func buzzRescure(){
+    print("Buzz Lightyear to the rescue!")
+}
+buzzRescure()
 
 
 
@@ -134,7 +164,9 @@
  */
 // write your code here
 
-
+func noArgReturnInt() -> Int{
+    return 42
+}
 
 
 
@@ -144,8 +176,11 @@
  */
 // write your code here
 
-
-
+func upperCaseFunc(_ charName: String) -> String{
+    let upperCase = charName.uppercased()
+    return "To infinity and beyond, \(upperCase)"
+}
+upperCaseFunc("Goku")
 
 
 
