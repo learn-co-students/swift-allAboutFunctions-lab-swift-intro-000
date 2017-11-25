@@ -105,18 +105,16 @@ alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
-
-
-
-
 /*: question9
  ### 9. Let's play Mad Libs! Create a function called `madLib`. It should take three parameters: A character name, a noun, and a preposition, and print out the line "To <noun> and <preposition>, <character name>!" to the console. Don't forget to call your function to test it out!
  */
 // write your code here
 
+func madLib (charName: String, noun: String, preposition: String) {
+    print("To \(noun) and \(preposition), \(charName)!")
+}
 
-
-
+madLib(charName: "Woody", noun: "infinite", preposition: "beyond")
 
 
 
@@ -125,10 +123,11 @@ alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
  */
 // write your code here
 
+func buzzCatchPhrase() -> String {
+    return "Buzz Lightyear to the rescue!"
+}
 
-
-
-
+print(buzzCatchPhrase())
 
 
 /*: question11
@@ -136,9 +135,11 @@ alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
  */
 // write your code here
 
+func anyNumber() -> Int {
+    return 23
+}
 
-
-
+print(anyNumber())
 
 
 /*: question12
@@ -146,9 +147,13 @@ alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
  */
 // write your code here
 
+func uppercaseCatchPhrase(charName: String) -> String {
+    let catchPhrase = "To infinity and beyond, \(charName)!"
+    
+    return catchPhrase.uppercased()
+}
 
-
-
+print(uppercaseCatchPhrase(charName: "Woody"))
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
