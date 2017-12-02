@@ -15,9 +15,11 @@
  */
 // write your code here
 
+func frozen(){
+    print("Let it go!")
+}
 
-
-
+frozen()
 
 
 
@@ -27,8 +29,12 @@
  */
 // write your code here
 
+func frozenAgain() {
+    let sMsg = "Let it go!"
+    print(sMsg)
+}
 
-
+frozenAgain()
 
 
 
@@ -38,8 +44,11 @@
  */
 // write your code here
 
+func myFav(sChar: String){
+    print("My favorite character is \(sChar).")
+}
 
-
+myFav(sChar: "Buzz")
 
 
 
@@ -49,8 +58,8 @@
  */
 // write your code here
 
-
-
+let favChar = "X"
+myFav(sChar: favChar)
 
 
 
@@ -60,8 +69,11 @@
  */
 // write your code here
 
+func sArg (nProb: Int) {
+    print("I got \(nProb) problems but Swift ain't one")
+}
 
-
+sArg (nProb: 9)
 
 
 
@@ -72,19 +84,23 @@
  */
 // write your code here
 
+func bandFavs(bandName:String, nRank: Int) {
+    print("My #\(nRank) favorite band is \(bandName).")
+}
 
-
+bandFavs(bandName: "Grateful Dead", nRank: 2)
+bandFavs(bandName: "David Bromberg", nRank: 1)
 
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
@@ -95,11 +111,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,9 +128,11 @@
  */
 // write your code here
 
+func madLib(sChar: String, sNoun: String, sPrep: String){
+    print("To \(sNoun) and \(sPrep), \(sChar)!")
+}
 
-
-
+madLib(sChar: "David", sNoun: "wife", sPrep: "over")
 
 
 
@@ -123,8 +141,11 @@
  */
 // write your code here
 
+func sBuzz() -> String{
+    return ("Buzz Lightyear to the rescue!")
+}
 
-
+print (sBuzz())
 
 
 
@@ -134,9 +155,11 @@
  */
 // write your code here
 
+func nVal() -> Int {
+    return 6
+}
 
-
-
+print(nVal())
 
 
 /*: question12
@@ -144,9 +167,11 @@
  */
 // write your code here
 
+func sUBuzz(sName: String) -> String {
+    return "To infinity and beyond, \(sName.uppercased())!"
+}
 
-
-
+print (sUBuzz(sName: "David"))
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
