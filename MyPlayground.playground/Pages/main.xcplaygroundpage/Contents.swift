@@ -146,7 +146,7 @@ func toyStory() -> String {
     let buzz = "Buzz Lightyear to the rescue!"
     return buzz
 }
-toyStory()
+print(toyStory())
 
 
 
@@ -160,7 +160,7 @@ toyStory()
 func favNum() -> Int {
     return 23
 }
-favNum()
+print(favNum())
 
 
 
@@ -171,7 +171,7 @@ favNum()
 func characterName(character: String) -> String{
     return "To infinity and beyond, \(character)!"
 }
-characterName(character: "Buzz".uppercased())
+print(characterName(character: "Buzz".uppercased()))
 
 
 
