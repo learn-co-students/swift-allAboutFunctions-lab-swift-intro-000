@@ -180,7 +180,7 @@ func toyStoryCharacter(characterName: String) -> String {
     return "To infinty and beyond, \(characterName.uppercased())!"
 }
 
-print(toyStoryCharacter("Buzz"))
+print(toyStoryCharacter(characterName: "Buzz"))
 // Returns To infinty and beyond, BUZZ!"
 
 
