@@ -15,7 +15,9 @@
  */
 // write your code here
 
-
+func frozen() {
+    print("Let it go!")
+}
 
 
 
@@ -28,7 +30,10 @@
 // write your code here
 
 
-
+func frozenAgain() {
+    let message = "Let it go!"
+    print(message)
+}
 
 
 
@@ -38,10 +43,12 @@
  */
 // write your code here
 
+func swiftFunc(character: String) {
+    print("My favorite character is \(character)")
+}
 
 
-
-
+swiftFunc(character: "The Dude")
 
 
 /*: question4
@@ -49,7 +56,12 @@
  */
 // write your code here
 
-
+let favChar = "Walter White"
+var tvChar = "Elliot"
+swiftFunc(character: favChar)
+swiftFunc(character: tvChar)
+tvChar = "Joey"
+swiftFunc(character: tvChar)
 
 
 
@@ -61,7 +73,9 @@
 // write your code here
 
 
-
+func Myfunc(integer: Int) {
+    print("i got \(integer) problems but Swift ain't one")
+}
 
 
 
@@ -73,18 +87,20 @@
 // write your code here
 
 
-
+func musicPreference(band: String, rank: Int) {
+    print("My #\(rank) favorite band is \(band)")
+}
 
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles",position:  2)
 
 
 
@@ -95,11 +111,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,7 +128,9 @@
  */
 // write your code here
 
-
+func madLib(name: String, noun: String, preposition: String) {
+    print("To \(noun) and \(preposition), \(name)")
+}
 
 
 
@@ -124,7 +142,9 @@
 // write your code here
 
 
-
+func normal() -> String {
+    return "Buzz Lightyear to the rescue!"
+}
 
 
 
@@ -135,7 +155,9 @@
 // write your code here
 
 
-
+func randomInt() -> Int {
+    return 45
+}
 
 
 
@@ -144,6 +166,11 @@
  */
 // write your code here
 
+func infinityAndBeyond(character: String) -> String {
+    return "To infinity and beyond, \(character.uppercased())!"
+}
+
+print(infinityAndBeyond(character: "Woody"))
 
 
 
