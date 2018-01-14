@@ -15,8 +15,12 @@
  */
 // write your code here
 
+func frozen(){
+    
+    print("Let it go!")
+}
 
-
+frozen()
 
 
 
@@ -27,8 +31,12 @@
  */
 // write your code here
 
-
-
+func frozenAgain(){
+    let phrase = "Let it go!"
+    print(phrase)
+    
+}
+frozenAgain()
 
 
 
@@ -38,9 +46,11 @@
  */
 // write your code here
 
+func dasFunction(name: String){
+    print( "My favorite character is \(name).")
+}
 
-
-
+dasFunction(name:"Jesse")
 
 
 
@@ -49,10 +59,13 @@
  */
 // write your code here
 
+var secondCharacter = "Walter"
 
+dasFunction(name: secondCharacter)
 
+secondCharacter = "Skyler"
 
-
+dasFunction(name: secondCharacter)
 
 
 /*: question5
@@ -61,9 +74,12 @@
 // write your code here
 
 
+func littleDog(problems: Int){
+    
+    print("I got \(problems) problems but Swift ain't one")
+}
 
-
-
+littleDog(problems: 99)
 
 
 
@@ -72,19 +88,23 @@
  */
 // write your code here
 
+func campBand(number: Int, bandName:String){
+    
+    print("My #\(number) favorite band is \(bandName).")
+}
 
-
+campBand(number: 1, bandName: "Scorpion")
 
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position:2)
 
 
 
@@ -95,11 +115,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,9 +132,12 @@
  */
 // write your code here
 
+func madLib(name: String, noun: String, preposition: String){
+    
+    print("To \(noun) and \(preposition), \(name)!")
+}
 
-
-
+madLib(name: "Jason", noun: "Beach", preposition: "behind")
 
 
 
@@ -123,9 +146,12 @@
  */
 // write your code here
 
+func noArguments() -> String{
+    
+    return("Buzz Lightyear to the rescue!")
+}
 
-
-
+print(noArguments())
 
 
 
@@ -133,7 +159,13 @@
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
+func nothingCanCompareToWhenYouRollTheDiceAndYouSwearYourLovesForMe() -> Int{
+    
+    //I couldn't find a native function for easy random Ints
+    return(9)
+}
 
+print(nothingCanCompareToWhenYouRollTheDiceAndYouSwearYourLovesForMe())
 
 
 
@@ -143,9 +175,14 @@
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 // write your code here
+func toUpperCaseAndBeyond(name: String){
+    
+    let uppercasedName = name.uppercased()
+    
+   print("To infinity and beyond, \(uppercasedName)!")
+}
 
-
-
+toUpperCaseAndBeyond(name: "Kurt")
 
 
 
