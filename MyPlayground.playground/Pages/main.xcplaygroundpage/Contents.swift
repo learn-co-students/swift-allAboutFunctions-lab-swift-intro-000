@@ -8,14 +8,16 @@
  * [Functions](https://github.com/learn-co-curriculum/swift-functions-readme)
  * [Functions with multiple arguments](https://github.com/learn-co-curriculum/swift-funcMultipleArg-readme)
  * [Functions with return values](https://github.com/learn-co-curriculum/swift-functionReturn-readme)
-
+ 
  */
 /*: question1
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
 // write your code here
 
-
+func frozen () {
+    print("Let it go!")
+}
 
 
 
@@ -26,9 +28,12 @@
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
 // write your code here
+func frozenAgain() {
+    let ring = "Let it go!"
+    print(ring)
+}
 
-
-
+frozenAgain()
 
 
 
@@ -38,8 +43,10 @@
  */
 // write your code here
 
-
-
+func soldierFront(forces: String){
+    print("My favorite character is \(forces)")
+}
+soldierFront(forces: "Delta")
 
 
 
@@ -49,9 +56,17 @@
  */
 // write your code here
 
+let gign = "GIGN"
 
+soldierFront(forces: gign)
 
+var rokmc = "ROKMC"
 
+soldierFront(forces: rokmc)
+
+rokmc = "LMAO"
+
+soldierFront(forces: rokmc)
 
 
 
@@ -60,7 +75,11 @@
  */
 // write your code here
 
+func intAsArguement(number: Int) {
+    print("I got \(number) problems but Swift ain't one.")
+}
 
+intAsArguement(number: 99)
 
 
 
@@ -72,19 +91,22 @@
  */
 // write your code here
 
+func band(name: String, number: Int) {
+    print ("My #\(number) favorite band is \(name)" )
+}
 
-
+band(name: "The Beatles", number: 5)
 
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "Hendrix", position: 5)
 
 
 
@@ -95,11 +117,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,7 +134,11 @@
  */
 // write your code here
 
+func madLib(charName: String, noun: String, preposition: String){
+    print("To \(noun) and \(preposition), \(charName)!")
+}
 
+madLib(charName: "Harry", noun: "The GOAT", preposition: "The Sheep")
 
 
 
@@ -123,9 +149,11 @@
  */
 // write your code here
 
+func lightYear () -> String {
+    return "Buzz Lightyear to the reascue!"
+}
 
-
-
+lightYear()
 
 
 
@@ -135,8 +163,11 @@
 // write your code here
 
 
+func numberFunc() -> Any{
+    return 1231241124124
+}
 
-
+numberFunc()
 
 
 /*: question12
@@ -144,8 +175,11 @@
  */
 // write your code here
 
+func characterName(name: String) -> String{
+    return "To infinity and beyond, \(name.uppercased())!"
+}
 
-
+print(characterName(name: "BuzzLight"))
 
 
 
