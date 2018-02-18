@@ -18,7 +18,9 @@
 
 
 
-
+func frozen() {
+    print("Let it go!")
+}
 
 
 
@@ -29,7 +31,10 @@
 
 
 
-
+func frozenAgain(){
+    let phrase = "Let it go!"
+    print(phrase)
+}
 
 
 
@@ -40,9 +45,9 @@
 
 
 
-
-
-
+func favCharac(_ name: String){
+    print("My favorite character is \(name).")
+}
 
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
@@ -52,7 +57,12 @@
 
 
 
-
+let A = "moi"
+favCharac(A)
+var B = "toi"
+favCharac(B)
+B = "lui"
+favCharac(B)
 
 
 /*: question5
@@ -61,10 +71,12 @@
 // write your code here
 
 
+func prob(_ number: Int){
+    print("I got \(number) problems but Swift ain't one")
+}
 
 
-
-
+prob(5)
 
 
 /*: question6
@@ -74,17 +86,19 @@
 
 
 
+func band(name: String, rank: Int){
+    print("My #\(rank) favorite band is \(name)")
+}
 
-
-
+band(name: "moi", rank: 1)
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+   print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
@@ -95,11 +109,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -146,7 +160,11 @@
 
 
 
+func to(_ name: String){
+    print("To infinity and beyond, \(name.uppercased())!")
+}
 
+to("moi")
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
