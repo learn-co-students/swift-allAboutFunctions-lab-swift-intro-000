@@ -15,7 +15,9 @@
  */
 // write your code here
 
-
+func frozen() {
+    print("Let it go")
+}
 
 
 
@@ -27,7 +29,10 @@
  */
 // write your code here
 
-
+func frozenAgain() {
+    let statement = "Let is go!"
+    print(statement)
+}
 
 
 
@@ -37,7 +42,9 @@
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
 // write your code here
-
+func greeting(name: String) {
+    print("My favourite character is  \(name)")
+}
 
 
 
@@ -49,7 +56,11 @@
  */
 // write your code here
 
-
+greeting(name: "Leisha")
+var word = "Danielle"
+greeting(name: word)
+word = word.uppercased()
+greeting(name: word)
 
 
 
@@ -59,7 +70,9 @@
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
 // write your code here
-
+func foo (arg: Int) {
+    print("I got \(arg) problems buw Swift ain't one")
+}
 
 
 
@@ -80,11 +93,11 @@
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
@@ -95,11 +108,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -123,7 +136,9 @@
  */
 // write your code here
 
-
+func toyStory() -> String {
+    return "Buzz lightyear to the rescue"
+}
 
 
 
@@ -133,7 +148,9 @@
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
-
+func someNumber() -> Int{
+    return 2
+}
 
 
 
@@ -144,8 +161,10 @@
  */
 // write your code here
 
-
-
+func bar (name : String) -> String
+{
+    return "To infinity and beyond, \(name)!"
+}
 
 
 
