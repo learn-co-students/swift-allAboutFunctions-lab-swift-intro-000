@@ -16,8 +16,10 @@
 // write your code here
 
 
-
-
+func frozen(){
+    print("Let it go!")
+}
+frozen()
 
 
 
@@ -28,9 +30,12 @@
 // write your code here
 
 
+func frozenAgain(){
+    let str = "Let it go!"
+    print(str)
+}
 
-
-
+frozenAgain()
 
 
 /*: question3
@@ -39,9 +44,11 @@
 // write your code here
 
 
+func printName(charName:String){
+    print("My favorite character is \(charName)")
+}
 
-
-
+printName(charName: "Tarzan")
 
 
 /*: question4
@@ -49,8 +56,13 @@
  */
 // write your code here
 
+let name1 = "Phantom"
+printName(charName: name1)
 
-
+let name2 = "Mandrake"
+printName(charName: name2)
+let name3 = "Supernam"
+printName(charName: name3)
 
 
 
@@ -61,7 +73,10 @@
 // write your code here
 
 
-
+func printNumber(num:Int){
+    print ( "I got \(num) problems but Swift ain't one")
+}
+printNumber(num:7)
 
 
 
@@ -72,9 +87,11 @@
  */
 // write your code here
 
+func printBand(band:String, number:Int){
+    print("My #\(number) favorite band is \(band).")
+}
 
-
-
+printBand(band: "Beatles",number: 1)
 
 
 /*: question7
@@ -88,6 +105,11 @@
 
 
 
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName:"The Beatles", position:2)
 
 
 
@@ -102,7 +124,11 @@
 //alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
+func alsoBadFavoriteBand(bandName: String, position: String) {
+    print("My #\(position) favorite band is \(bandName)")
+}
 
+alsoBadFavoriteBand(bandName: "Blink-182", position: "42")
 
 
 
@@ -112,9 +138,11 @@
  */
 // write your code here
 
+func madLib(name:String, noun:String,preposition:String){
+   print("To \(name) and \(noun), \(preposition) name!" )
+}
 
-
-
+madLib(name: "Vinod",noun: "Table", preposition: "behond")
 
 
 
@@ -124,9 +152,11 @@
 // write your code here
 
 
+func getLightYear() ->String{
+    return "Buzz Lightyear to the rescue!"
+}
 
-
-
+print(getLightYear())
 
 
 /*: question11
@@ -135,7 +165,11 @@
 // write your code here
 
 
+func getNumber() ->Int{
+    return 7
+}
 
+print(getNumber())
 
 
 
@@ -144,8 +178,11 @@
  */
 // write your code here
 
+func getNumber(charName:String) ->String{
+    return "To infinity and beyond, \(charName.uppercased())!"
+}
 
-
+print(getNumber(charName:"Amithabh"))
 
 
 
