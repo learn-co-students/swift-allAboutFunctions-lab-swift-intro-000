@@ -15,9 +15,11 @@
  */
 // write your code here
 
+func frozen(){
+    print("Let it go!")
+}
 
-
-
+frozen()
 
 
 
@@ -26,7 +28,12 @@
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
 // write your code here
+func frozenAgain(){
+ let say = "Let it go!"
+    print(say)
+}
 
+frozenAgain()
 
 
 
@@ -37,9 +44,12 @@
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
 // write your code here
+func charName(name:Any){
+    print("My favorite character is \(name).")
+}
 
-
-
+charName(name: "Donald Duck")
+charName(name: 007)
 
 
 
@@ -49,6 +59,12 @@
  */
 // write your code here
 
+let favouriteChar = "Sabu"
+charName(name: favouriteChar)
+var favChar = "Raman"
+charName(name: favChar)
+favChar = "Doga"
+charName(name: favChar)
 
 
 
@@ -60,7 +76,11 @@
  */
 // write your code here
 
+func num(aNum: Int){
+    print("I got \(aNum) problems but Swift ain't one")
+}
 
+num(aNum: 10)
 
 
 
@@ -72,7 +92,10 @@
  */
 // write your code here
 
-
+func band(aBand:String, rank:Int){
+    print("My #\(rank) favorite band is \(aBand).")
+}
+band(aBand: "strings", rank: 5)
 
 
 
@@ -95,11 +118,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: String) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: "42")
 
 
 
@@ -112,7 +135,11 @@
  */
 // write your code here
 
+func madLib(aChar:String, aNoun: String, aPrep:String){
+    print("To \(aNoun) and \(aPrep), \(aChar)!")
+}
 
+madLib(aChar: "Doga", aNoun: "Gun", aPrep: "keeps")
 
 
 
@@ -122,7 +149,11 @@
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
 // write your code here
+func testStr()->String{
+    return "Buzz Lightyear to the rescue!"
+}
 
+testStr()
 
 
 
@@ -133,9 +164,10 @@
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
-
-
-
+func testNum()->Int{
+    return 10
+}
+testNum()
 
 
 
@@ -143,7 +175,11 @@
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 // write your code here
+func testChar(aChar: String)->String{
+    return "To infinity and beyond, \(aChar)!"
+}
 
+testChar(aChar: "Doga")
 
 
 
