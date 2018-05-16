@@ -15,11 +15,9 @@
  */
 // write your code here
 
-
-
-
-
-
+func frozen(){
+    print("Let it go!")
+}
 
 
 /*: question2
@@ -27,7 +25,9 @@
  */
 // write your code here
 
-
+func frozenAgain(){
+    let elsa = "Let it go"
+}
 
 
 
@@ -38,7 +38,9 @@
  */
 // write your code here
 
-
+func favouriteCharacter(character: String){
+    print("My favourite character is \(character)")
+}
 
 
 
@@ -49,8 +51,10 @@
  */
 // write your code here
 
+favouriteCharacter(character: "Maui")
+let character = "Yoda"
 
-
+favouriteCharacter(character: character)
 
 
 
@@ -60,9 +64,11 @@
  */
 // write your code here
 
+func jayz(problems: Int){
+    print("I got \(problems) problems but Swift ain't one!")
+}
 
-
-
+jayz(problems: 99)
 
 
 
@@ -72,19 +78,21 @@
  */
 // write your code here
 
+func topBand(name: String, number: Int){
+    print ("My #\(number) favourite band is \(name)")
+}
 
-
-
+topBand(name: "Beatles", number: 1)
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
@@ -95,11 +103,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,9 +120,11 @@
  */
 // write your code here
 
+func madLib(character: String, noun: String, prepos: String){
+    print("To \(noun) and \(prepos), \(character)")
+}
 
-
-
+madLib(character: "Yoda", noun: "Blue", prepos: "After")
 
 
 
@@ -123,9 +133,11 @@
  */
 // write your code here
 
+func Buzz(){
+    print("Buzz Lightyear to the rescue!")
+}
 
-
-
+Buzz()
 
 
 
@@ -133,10 +145,12 @@
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
+import UIKit
+func Number(){
+    print (arc4random_uniform(60))
+}
 
-
-
-
+Number()
 
 
 /*: question12
@@ -145,8 +159,11 @@
 // write your code here
 
 
-
-
+func toyStory(char: String){
+    var charUpper = char.uppercased()
+    print("To infinity and beyond, \(charUpper)")
+}
+toyStory(char: "Woody")
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
