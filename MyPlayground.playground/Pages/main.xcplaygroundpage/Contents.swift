@@ -1,21 +1,12 @@
-/*: Outline
- 
- 
- # Functions
- 
- ### Readings associated with this lab
- 
- * [Functions](https://github.com/learn-co-curriculum/swift-functions-readme)
- * [Functions with multiple arguments](https://github.com/learn-co-curriculum/swift-funcMultipleArg-readme)
- * [Functions with return values](https://github.com/learn-co-curriculum/swift-functionReturn-readme)
 
- */
 /*: question1
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
 // write your code here
 
-
+func frozen(){
+  print('Let it go!')
+}
 
 
 
@@ -27,7 +18,10 @@
  */
 // write your code here
 
-
+func frozenAgain(){
+  let text = 'Let it go!'
+  print(text)
+}
 
 
 
@@ -150,4 +144,3 @@
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
-
