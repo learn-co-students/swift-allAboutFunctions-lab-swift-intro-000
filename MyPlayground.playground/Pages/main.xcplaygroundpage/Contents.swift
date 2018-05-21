@@ -14,9 +14,11 @@
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
 // write your code here
+func frozen(){
+    print("Let it go!")
+}
 
-
-
+frozen()
 
 
 
@@ -27,8 +29,11 @@
  */
 // write your code here
 
-
-
+func frozenAgain(){
+    let script = "Let it go!"
+    print(script)
+}
+frozenAgain()
 
 
 
@@ -38,9 +43,11 @@
  */
 // write your code here
 
+func favouriteCharacter(character: String){
+    print("My favourite character is \(character)")
+}
 
-
-
+favouriteCharacter(character: "Elsa")
 
 
 
@@ -48,7 +55,13 @@
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
 // write your code here
+let character1 = "Pooh"
 
+favouriteCharacter(character: character1)
+var character2 = "Tiger"
+favouriteCharacter(character: character2)
+character2 = "George"
+favouriteCharacter(character: character2)
 
 
 
@@ -60,8 +73,11 @@
  */
 // write your code here
 
+func problems(_ number: Int){
+    print("I got \(number) problems but Swift ain't one")
+}
 
-
+problems(2)
 
 
 
@@ -71,8 +87,11 @@
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
 // write your code here
+func favouriteBand(number: Int, band: String){
+    print("My #\(number) favourite band is \(band)")
+}
 
-
+favouriteBand(number: 1, band: "Angus and Julia Stone")
 
 
 
@@ -80,12 +99,11 @@
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(_ bandName: String, _ position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
 
+badFavoriteBand("The Beatles", 2)
 
 
 
@@ -95,13 +113,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
 
-
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,7 +128,11 @@
  */
 // write your code here
 
+func madLib(_ noun: String, _ preposition: String, _ character: String){
+    print("To \(noun) and \(preposition), \(character)!")
+}
 
+madLib("chair", "before", "Luke Skywalker")
 
 
 
@@ -123,7 +143,11 @@
  */
 // write your code here
 
+func script(){
+    print("Buzz Lightyear to the rescur")
+}
 
+script()
 
 
 
@@ -133,8 +157,13 @@
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
+func randomNumber() -> Int {
+//    let number = Int(arc4random_uniform(42))
+    let number = 10
+    return number
+}
 
-
+randomNumber()
 
 
 
@@ -143,9 +172,12 @@
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 // write your code here
+func buzzCharacter(name: String) -> String{
+    let character = name.uppercased()
+    return("To infinity and beyond, \(character)!")
+}
 
-
-
+print(buzzCharacter(name: "Erin"))
 
 
 
