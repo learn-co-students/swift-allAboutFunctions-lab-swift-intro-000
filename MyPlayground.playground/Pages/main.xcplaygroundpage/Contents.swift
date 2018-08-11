@@ -15,7 +15,10 @@
  */
 // write your code here
 
-
+func frozen() {
+    
+    print("Let it go!")
+}
 
 
 
@@ -27,7 +30,12 @@
  */
 // write your code here
 
-
+func frozenAgain() {
+    
+    let call = "Let it go!"
+    
+    print("\(call)")
+}
 
 
 
@@ -38,7 +46,10 @@
  */
 // write your code here
 
-
+func favoriteChar(name: String) {
+    
+    print("My favorite character is \(name).")
+}
 
 
 
@@ -49,7 +60,16 @@
  */
 // write your code here
 
+let neverChanging = "Morpheus"
 
+favoriteChar(name: neverChanging)
+
+var notSure = "The Dude"
+
+favoriteChar(name: notSure)
+notSure = "Donny"
+
+favoriteChar(name: notSure)
 
 
 
@@ -61,8 +81,13 @@
 // write your code here
 
 
+func jayZ(problems: Int) {
+    
+    print("I got \(problems) problems but Swift ain't one!")
+}
 
-
+let swiftNumber = 99
+jayZ(problems: swiftNumber)
 
 
 
@@ -72,7 +97,10 @@
  */
 // write your code here
 
-
+func bandList(name: String, number: Int) {
+    
+    print("My #\(number) favorite band is \(name)")
+}
 
 
 
@@ -80,11 +108,11 @@
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+   print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
@@ -95,11 +123,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+   print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,9 +140,11 @@
  */
 // write your code here
 
+func madLib(name: String, noun: String, preposition: String) {
+    print("To \(noun) and \(preposition), \(name)!")
+}
 
-
-
+madLib(name: "Woody", noun: "infinity", preposition: "beyond")
 
 
 
@@ -124,7 +154,10 @@
 // write your code here
 
 
-
+func buzz() -> String {
+    
+    return "Buzz Lightyear to the rescue!"
+}
 
 
 
@@ -134,7 +167,10 @@
  */
 // write your code here
 
-
+func anyNum() -> Int {
+    let randomNumber = 32
+    return randomNumber
+}
 
 
 
@@ -144,7 +180,10 @@
  */
 // write your code here
 
-
+func charName(name: String) -> String {
+    
+    return "To infinity and beyond, \(name.uppercased())!"
+}
 
 
 
