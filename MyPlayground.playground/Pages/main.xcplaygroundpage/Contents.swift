@@ -16,8 +16,12 @@
 // write your code here
 
 
+func frozen(){
+    
+    print("Let it go!")
+}
 
-
+frozen()
 
 
 
@@ -28,9 +32,12 @@
 // write your code here
 
 
+func frozenAgain(){
+    let song = "Let it go!"
+    print(song)
+}
 
-
-
+frozenAgain()
 
 
 /*: question3
@@ -39,18 +46,27 @@
 // write your code here
 
 
+func faveChar(_ charName: String){
+    
+    print("My favorite character is \(charName)")
+}
 
 
 
-
-
+faveChar("Mulan")
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
 // write your code here
 
 
+let name = "Greg"
 
+faveChar(name)
+var best = "Jon Snow"
+faveChar(best)
+best = "Woody"
+faveChar(best)
 
 
 
@@ -62,9 +78,13 @@
 
 
 
+func probCount(_ problems: Int){
+    
+    print("I got \(problems) problems but Swift ain't one")
+    
+}
 
-
-
+probCount(12)
 
 
 /*: question6
@@ -73,18 +93,20 @@
 // write your code here
 
 
+func bandRater(_ bandName: String, _ rating: Int){
+    
+    print("My #\(rating) favorite band is \(bandName).")
+}
 
-
-
-
+bandRater("Hillsong United", 1)
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles",position: 2)
 
 
 
@@ -95,11 +117,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+   print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -113,9 +135,11 @@
 // write your code here
 
 
+func madLib(_ charName: String, _ noun: String, _ prep: String){
+    print("To \(noun) and \(prep), \(charName)!")
+}
 
-
-
+madLib("Spongebob", "China", "On")
 
 
 /*: question10
@@ -125,9 +149,13 @@
 
 
 
+func infinity() -> String {
+    var data = "Buzz Lightyear to the rescue"
+    return data
+}
 
-
-
+var spoke = infinity()
+print(spoke)
 
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
@@ -135,18 +163,24 @@
 // write your code here
 
 
+func spitNum() -> Int{
+    
+    return 22
+}
 
-
-
+print(spitNum())
 
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 // write your code here
 
+func infinityCall(_ charName: String) -> String{
+    
+    return "To infinity and beyond, \(charName)!"
+}
 
-
-
+print(infinityCall("BoPeep"))
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
