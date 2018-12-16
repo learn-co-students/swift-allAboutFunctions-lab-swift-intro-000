@@ -162,7 +162,7 @@ func number() -> Int{
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
 func buzzCharacter(character: String) -> String{
-    return "To infinity and beyond, \(character)!"
+    return "To infinity and beyond, \(character.uppercased())!"
 }
 
 
