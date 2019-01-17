@@ -13,21 +13,24 @@
 /*: question1
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
-// write your code here
+func frozen()
+{
+    print("Let it go!")
+}
 
-
-
-
-
-
+frozen()
 
 
 /*: question2
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
-// write your code here
+func frozenAgain()
+{
+    let printString = "Let it go!"
+    print(printString)
+}
 
-
+frozenAgain()
 
 
 
@@ -36,9 +39,12 @@
 /*: question3
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
-// write your code here
+func charName(character: String)
+{
+    print("My favorite character is \(character)")
+}
 
-
+charName(character: "Daffy Duck")
 
 
 
@@ -47,9 +53,10 @@
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
-// write your code here
-
-
+let characterName = "Donald Duck"
+charName(character: characterName)
+var characterName2 = "mallard duck"
+charName(character: characterName2)
 
 
 
@@ -58,9 +65,12 @@
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
-// write your code here
+func numberFunc(number: Int)
+{
+    print("I got \(number) problems but Swift ain't one")
+}
 
-
+numberFunc(number: 4)
 
 
 
@@ -70,9 +80,12 @@
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
-// write your code here
+func testBand(bandName: String, bandNumber: Int)
+{
+    print("My \(bandNumber) favorite band is \(bandName).")
+}
 
-
+testBand(bandName: "Def Leppard", bandNumber: 2)
 
 
 
@@ -80,11 +93,11 @@
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
@@ -95,11 +108,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -121,10 +134,13 @@
 /*: question10
  ### 10. Create a function that takes no arguments and returns the string "Buzz Lightyear to the rescue!"
  */
-// write your code here
+func buzzLightYear() -> String
+{
+    return "Buzz Lightyear to the rescue!"
+}
 
 
-
+print(buzzLightYear())
 
 
 
@@ -132,7 +148,10 @@
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
-// write your code here
+func anyNumber() -> Int
+{
+    return 7
+}
 
 
 
@@ -142,8 +161,12 @@
 /*: question12
  ### 12. Create a function that takes in a characters name. This function will return back a `String` as follows: "To infinity and beyond, <character name>!". The character name should be returned uppercased.
  */
-// write your code here
+func testCharName(character: String) -> String
+{
+    return "To infinity and beyond, \(character.uppercased())"
+}
 
+testCharName(character: "Buzz")
 
 
 
