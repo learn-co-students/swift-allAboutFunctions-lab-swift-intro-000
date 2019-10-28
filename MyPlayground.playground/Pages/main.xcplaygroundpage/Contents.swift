@@ -13,10 +13,12 @@
 /*: question1
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
-// write your code here
+func frozen () {
+    print ("Let it go!")
+}
 
 
-
+frozen()
 
 
 
@@ -25,10 +27,14 @@
 /*: question2
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
-// write your code here
+func frozenAgain () {
+    let chorus = "Let it go!"
+    
+    print(chorus)
+}
 
 
-
+frozenAgain()
 
 
 
@@ -36,10 +42,12 @@
 /*: question3
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
-// write your code here
+func favCharacter (name: String) {
+    print ("My favourite character is \(name)")
+}
 
 
-
+favCharacter(name: "Remus Lupin")
 
 
 
@@ -47,63 +55,53 @@
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
-// write your code here
-
-
-
-
-
+let constantFavCharacterName = "Gregory House"
+favCharacter(name: constantFavCharacterName)
+var favCharacterName = "Eddard Stark"
+favCharacter(name: favCharacterName)
+favCharacterName = "Jon Snow"
+favCharacter(name: favCharacterName)
 
 
 /*: question5
  ### 5. Write a function that takes an integer as an argument and prints the string "I got <number> problems but Swift ain't one" to the console.
  */
-// write your code here
+func printMyProblems (numProblems: Int) {
+    print("I got \(numProblems) problems but Swift ain't one")
+}
 
-
-
-
-
-
+printMyProblems(numProblems: 3)
 
 
 /*: question6
  ### 6. Write a function that takes two arguments, the name of a band (a `String`) and a number (an `Int`). It should print the message "My #<number> favorite band is <band>." to the console.
  */
-// write your code here
+func rankingBand (bandName: String, bandPosition: Int) {
+    print ("My #\(bandPosition) favorite band is \(bandName).")
+}
 
-
-
-
+rankingBand(bandName: "Gamma Ray", bandPosition: 22)
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
 
-
-
-
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
 
-
-
-
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -112,9 +110,11 @@
  */
 // write your code here
 
+func madLib (charName: String, noun: String, preposition: String) {
+    print("To \(noun) and \(preposition), \(charName)!")
+}
 
-
-
+madLib(charName: "Woody", noun: "infinite", preposition: "beyond")
 
 
 
@@ -123,10 +123,11 @@
  */
 // write your code here
 
+func buzzCatchPhrase() -> String {
+    return "Buzz Lightyear to the rescue!"
+}
 
-
-
-
+print(buzzCatchPhrase())
 
 
 /*: question11
@@ -134,9 +135,11 @@
  */
 // write your code here
 
+func anyNumber() -> Int {
+    return 23
+}
 
-
-
+print(anyNumber())
 
 
 /*: question12
@@ -144,9 +147,13 @@
  */
 // write your code here
 
+func uppercaseCatchPhrase(charName: String) -> String {
+    let catchPhrase = "To infinity and beyond, \(charName)!"
+    
+    return catchPhrase.uppercased()
+}
 
-
-
+print(uppercaseCatchPhrase(charName: "Woody"))
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
